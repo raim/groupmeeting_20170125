@@ -97,7 +97,7 @@ repositioning underlies dynamic gene expression.*</font>
 
 --- .lineheight .listheight
 
-## The Budding Yeast Genome (Transcribed Units)
+## The Budding Yeast Genome
 <font size=-1>
 <img src="assets/img/chromosome_01.png"  height="12">I   </br>
 <img src="assets/img/chromosome_02.png"  height="12">II	 </br>
