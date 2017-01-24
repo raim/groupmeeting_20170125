@@ -1,0 +1,6 @@
+```{r, results='asis', echo=FALSE}
+X <- matrix("",ncol=2,nrow=1)
+X[1,1] <- '<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">'
+X[1,2] <- "<ol><li><HOC>cytosolic ribosomes</HOC> &rarr; <clB>amino acid synthesis</clB></li><li><clC>mitochondrial ribosomes</clC> &rarr; <LOC>stress & catabolism</LOC></li></ol>"
+print(xtable(X),sanitize.text.function=function(x){x}, type = "html")
+```

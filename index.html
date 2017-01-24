@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Transcriptional Landscape of Budding Yeast</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Transcriptional Landscape of Budding Yeast">
+  <meta name="author" content="Rainer Machne">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/my.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The Transcriptional Landscape of Budding Yeast</h1>
+    <h2>and the Gummiband Modell</h2>
+    <p>Rainer Machne<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="lineheight" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+.smalltext {
+    font-size: 50%;
+}
+</style>
+
+<style>
+HOC {
+    color:#FF0000;
+    font-weight: bold;
+}
+LOC {
+    color:#0000FF;
+    font-weight: bold;
+}
+clB {
+    color:#00FF00;
+    font-weight: bold;
+}
+clC {
+    color:#00FFFF;
+    font-weight: bold;
+}
+</style> 
+
+<h2>Deoxyribonucleic acid</h2>
+
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="assets/img/220px-DNA_orbit_animated.gif" height="500">
+</br><font size=-1>Richard Wheeler (Zephyris) at en.wikipedia</font></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p></br></br></p>
+
+<p><img src="assets/img/model_feedback.png"  height="180"></p>
+
+<p></br></br>
+Global Regulatory Mechanisms?</br></p>
+
+<div style='text-align: right;'>growth homeostasis</br>cell differentiation</br>sporulation</br>...</div>
+
+<p>Direct Impact of Cell Physiology</br>on Chromosome Structure &amp; Transcription?</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h3>Gene Expression &amp; Chromatin</h3>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:35%;'>
+  <p><img src="assets/img/lee07_clusters_major.png"  height="580"></p>
+
+</div>
+<div style='float:right;width:60%;' class='centered'>
+  <p><img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" width="300"></br>
+<img src="assets/img/ATP_ADP.png"  width="300"></p>
+
+<p><img src="assets/img/remodeling_atp.png"  height="200"></p>
+
+<p>ATP-dependent Nucleosome Remodeling.</br>
+A Global Growth Regulatory Feedback?</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h3>Gene Expression &amp; Chromatin</h3>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:35%;'>
+  <p><img src="assets/img/lee07_clusters_major.png"  height="580"></p>
+
+</div>
+<div style='float:right;width:60%;' class='centered'>
+  <p><img src="assets/img/nocetti16_ranges_major.png"  height="150"></p>
+
+<table><thead>
+<tr>
+<th><font size=-1>raw time-series</font></th>
+<th><font size=-1>temporal mean ratio</div></font></th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/nucl_nocetti16_movie_.gif"  height="170"></td>
+<td><img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="170"></td>
+</tr>
+</tbody></table>
+
+<p><font size=-2>Nocetti &amp; Whitehouse, GenesDevel 2016: <em>Nucleosome
+repositioning underlies dynamic gene expression.</em></font></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight listheight" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The Budding Yeast Genome (Transcribed Units)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><font size=-1>
+<img src="assets/img/chromosome_01.png"  height="12">I   </br>
+<img src="assets/img/chromosome_02.png"  height="12">II  </br>
+<img src="assets/img/chromosome_03.png"  height="12">III </br>
+<img src="assets/img/chromosome_04.png"  height="12">IV  </br>
+<img src="assets/img/chromosome_05.png"  height="12">V   </br>
+<img src="assets/img/chromosome_06.png"  height="12">VI  </br>
+<img src="assets/img/chromosome_07.png"  height="12">VII </br>
+<img src="assets/img/chromosome_08.png"  height="12">VIII</br>
+<img src="assets/img/chromosome_09.png"  height="12">IX  </br>
+<img src="assets/img/chromosome_10.png"  height="12">X   </br>
+<img src="assets/img/chromosome_11.png"  height="12">XI  </br>
+<img src="assets/img/chromosome_12.png"  height="12">XII </br>
+<img src="assets/img/chromosome_13.png"  height="12">XIII</br>
+<img src="assets/img/chromosome_14.png"  height="12">XIV </br>
+<img src="assets/img/chromosome_15.png"  height="12">XV  </br>
+<img src="assets/img/chromosome_16.png"  height="12">XVI </br>
+<img src="assets/img/chromosome_17.png"  height="12">mitochondrial
+</font></p>
+
+<ul>
+<li>Stream-lined genome, co-evolution with fruits, fermentation specialist
+or generalist?</li>
+<li>16 Nuclear Chromosomes, 1 Mitochondrial Genome, 1 Plasmid</br>
+12 Megabases, 5700-6000 protein-coding genes</li>
+<li><b>Unclear extend and function of non-coding transcription!</b></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>The Experiment: RNAseq Time Series</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/sampling_day.png"  height="400"><img src="assets/img/fermentor_detailed.png" height="200"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>The Experiment: RNAseq Time Series</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/sampling_context.png"  height="550"> bioreactor magic</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>The Experiment: RNAseq Time Series</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/sampling.png"  height="400"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="listheight smalltext" id="slide-8" style="background:;">
+  <hgroup>
+    <h3>Primary Segment 0417</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00417.png"  height="300"></p>
+
+<ol>
+<li>RNA-seq time-series from bottom to top</li>
+<li>Transcribed units as reported in 2-3 papers:<br>
+ORF: open reading frames, AS: antisense (putative and manually curated)<br>
+SUT: stable untranslated, CUT: cryptic unstable, and XUT: Xrn1-sensitive unstable transcripts </li>
+<li>Annotated genome features</li>
+<li>MNase time-series (Nocetti &amp; Whitehouse 2016)  &larr; <b>Nucleosomes</b></li>
+</ol>
+
+<p><code>https://gitlab.com/raim/genomeBrowser</code> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h3>Expressed Domain 003</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/domain_003_33kb.png"  height="300"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>The Pipeline &amp; Karl</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Take samples; extract total RNA (Kalesh&#39;s method!);<br/>send off to 
+Beijing Genome Institute (1k $ per sample) </li>
+<li>Send &#39;reads&#39; (<code>fastq.gz</code>) files to Berni in Leipzig (Stephan Bernhart) &rarr;
+<code>segemehl</code> <br/>
+<img src="assets/img/burns.jpg" height="100"><img src="assets/img/studlasa.gif" height="100"> 
+and
+retrieve mapping of reads the genome as <b>read counts!</b></li>
+<li>Contemplate over data ... do other stuff ... contemplate more over data ... annoy lots of math people with it ...cyanos ... contemplate yet some more over data ... annoy Studla ...<br/></li>
+<li><code>KARL</code>:<br/>
+<img src="assets/img/anadenobolus_arboreus.png" height="100">, the<br/>
+<img src="assets/img/segmentier.svg" height="45"></li>
+<li class='..'>contemplate over data again ...</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:75%;'>
+  <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
+<img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
+
+<ol>
+<li>Cut genome, 2x12 Mb, into digestable chunks (<code>primary segments</code>)</li>
+<li>For each chunk, cluster read-counts, similar to previous approch:<br>
+take Discrete Fourier Transform <code>DFT</code> (scale components) &amp;<br>
+cluster selected (de-noised!) <code>DFT</code> components</li>
+<li>Calculate cluster-cluster and cluster-position similarities</li>
+<li>Feed hungry <code>KARL</code></li>
+</ol>
+
+</div>
+<div style='float:right;width:12%;' class='centered'>
+  <p><br><br></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="foo" style="background:;">
+  <hgroup>
+    <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
+<img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
+
+<p>Scoring:
+\[
+\begin{equation*} \begin{aligned}
+ s(i,j,\mathcal{C})=& -M + \sum_{k=i}^j \tilde\sigma(x_k,\mathcal{C})\\ 
+ S_{i,\mathcal{C}} =& \max_{j \le i} \max_{\mathcal{D}\ne\mathcal{C}} S_{j-1,\mathcal{D}} + s(j,i,\mathcal{C})
+\end{aligned} \end{equation*}\]</p>
+
+<p>&amp; backtracing optimal breakpoints</p>
+
+<script>
+$("#foo ol").attr('start', 5)
+</script>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Gene Expression &amp; Chromatin'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Gene Expression &amp; Chromatin'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Budding Yeast Genome (Transcribed Units)'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='The Experiment: RNAseq Time Series'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='The Experiment: RNAseq Time Series'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='The Experiment: RNAseq Time Series'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Primary Segment 0417'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Expressed Domain 003'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='The Pipeline &amp; Karl'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code>'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code>'>
+         12
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
