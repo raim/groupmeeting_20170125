@@ -71,7 +71,7 @@ Direct Impact of Cell Physiology</br>on Chromosome Structure & Transcription?
 
 --- &twocolbigright
 
-## Chromatin & Templated RNA Polymerization
+## Chromatin 
 
 *** =left
 <img src="assets/img/lee07_clusters_major.png"  height="580">
@@ -88,7 +88,7 @@ A Global Growth Regulatory Feedback?
 
 --- &twocolbigright
 
-## Chromatin & Templated RNA Polymerization
+## Chromatin 
 
 *** =left
 <img src="assets/img/lee07_clusters_major.png"  height="580">
@@ -108,7 +108,7 @@ repositioning underlies dynamic gene expression.*</font>
 
 --- .lineheight .listheight
 
-## Genome: Budding Yeast
+## Genome
 <font size=-0.5>
 <img src="assets/img/chromosome_01.png"  height="12">I   </br>
 <img src="assets/img/chromosome_02.png"  height="12">II	 </br>
@@ -137,14 +137,14 @@ or generalist?
 
 ---.lineheight .listheight &twocolbigleft
 
-## The Experiment: RNAseq Time Series
+## The Experiment
 ***=left
 <img src="assets/img/sampling.png"  height="300">
 
 ### Data pipeline, part I:
 
 1. Take samples, extract ~100 &mu;g total RNA<br> by Kalesh's method!
-2. Send off to Beijing Genome Institute <br>@ 1k $ per sample
+2. Send off to Beijing Genome Institute for <br>strand-specific RNAseq @ 1k $ per sample
 ***=right
 
 <img src="assets/img/fermentor_detailed.png" height="200">

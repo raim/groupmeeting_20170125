@@ -13,3 +13,9 @@ print(xtable(X),sanitize.text.function=function(x){x}, type = "html")
 ## The Experiment: RNAseq Time Series
 <img src="assets/img/sampling_context.png"  height="550"> bioreactor magic
 
+
+ & the *Gummiband* Model
+ 
+ & Templated RNA Polymerization
+ 
+ : Budding Yeast
