@@ -45,6 +45,14 @@
     <slide class="lineheight" id="slide-1" style="background:;">
   <article data-timings="">
     <style>
+oq {
+    background-color:yellow;
+    color:#CC2904;
+    font-weight: bold;
+}
+</style>
+
+<style>
 em {
   font-style: italic
 }
@@ -54,14 +62,17 @@ em {
 .smalltext {
     font-size: 50%;
 }
+.largetext {
+    font-size: 120%;
+}
 </style>
 
 <style>
-HOC {
+hoc {
     color:#FF0000;
     font-weight: bold;
 }
-LOC {
+loc {
     color:#0000FF;
     font-weight: bold;
 }
@@ -88,7 +99,7 @@ clC {
 <p><img src="assets/img/model_feedback.png"  height="180"></p>
 
 <p></br></br>
-Global Regulatory Mechanisms?</br></p>
+Global Regulatory Mechanisms?<br><br></p>
 
 <div style='text-align: right;'>growth homeostasis</br>cell differentiation</br>sporulation</br>...</div>
 
@@ -101,7 +112,7 @@ Global Regulatory Mechanisms?</br></p>
 
 <slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h3>Gene Expression &amp; Chromatin</h3>
+    <h2>Chromatin &amp; Templated RNA Polymerization</h2>
   </hgroup>
   <article data-timings="">
     
@@ -111,7 +122,7 @@ Global Regulatory Mechanisms?</br></p>
 </div>
 <div style='float:right;width:60%;' class='centered'>
   <p><img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" width="300"></br>
-<img src="assets/img/ATP_ADP.png"  width="300"></p>
+<img src="assets/img/ATP_ADP.png"  width="300"><img src="assets/img/model_feedback.png"  height="100"></p>
 
 <p><img src="assets/img/remodeling_atp.png"  height="200"></p>
 
@@ -125,7 +136,7 @@ A Global Growth Regulatory Feedback?</p>
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h3>Gene Expression &amp; Chromatin</h3>
+    <h2>Chromatin &amp; Templated RNA Polymerization</h2>
   </hgroup>
   <article data-timings="">
     
@@ -138,8 +149,8 @@ A Global Growth Regulatory Feedback?</p>
 
 <table><thead>
 <tr>
-<th><font size=-1>raw time-series</font></th>
-<th><font size=-1>temporal mean ratio</div></font></th>
+<th><font size=-1>raw time-series:</font></th>
+<th><font size=-1>temporal mean ratio:</div></font></th>
 </tr>
 </thead><tbody>
 <tr>
@@ -162,10 +173,10 @@ repositioning underlies dynamic gene expression.</em></font></p>
 
 <slide class="lineheight listheight" id="slide-4" style="background:;">
   <hgroup>
-    <h2>The Budding Yeast Genome (Transcribed Units)</h2>
+    <h2>Genome: Budding Yeast</h2>
   </hgroup>
   <article data-timings="">
-    <p><font size=-1>
+    <p><font size=-0.5>
 <img src="assets/img/chromosome_01.png"  height="12">I   </br>
 <img src="assets/img/chromosome_02.png"  height="12">II  </br>
 <img src="assets/img/chromosome_03.png"  height="12">III </br>
@@ -186,53 +197,48 @@ repositioning underlies dynamic gene expression.</em></font></p>
 </font></p>
 
 <ul>
-<li>Stream-lined genome, co-evolution with fruits, fermentation specialist
+<li>Stream-lined genome; co-evolution with fruits; fermentation specialist
 or generalist?</li>
 <li>16 Nuclear Chromosomes, 1 Mitochondrial Genome, 1 Plasmid</br>
 12 Megabases, 5700-6000 protein-coding genes</li>
-<li><b>Unclear extend and function of non-coding transcription!</b></li>
+<li><b>Unclear extent and function of non-coding transcription!</b></li>
 </ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5" style="background:;">
+<slide class="lineheight listheight" id="slide-5" style="background:;">
   <hgroup>
     <h2>The Experiment: RNAseq Time Series</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="assets/img/sampling_day.png"  height="400"><img src="assets/img/fermentor_detailed.png" height="200"></p>
+    
+<div style='float:left;width:60%;'>
+  <p><img src="assets/img/sampling.png"  height="300"></p>
 
+<h3>Data pipeline, part I:</h3>
+
+<ol>
+<li>Take samples, extract ~100 &mu;g total RNA<br> by Kalesh&#39;s method!</li>
+<li>Send off to Beijing Genome Institute <br>@ 1k $ per sample</li>
+</ol>
+
+</div>
+<div style='float:right;width:40%;' class='centered'>
+  <p><img src="assets/img/fermentor_detailed.png" height="200">
+<br><oq>reactor magic:</oq></p>
+
+<p>2 <hoc>HOC</hoc> and 2&frac12; <loc>LOC</loc> phases sampled</p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-6" style="background:;">
+<slide class="listheight smalltext" id="slide-6" style="background:;">
   <hgroup>
-    <h2>The Experiment: RNAseq Time Series</h2>
-  </hgroup>
-  <article data-timings="">
-    <p><img src="assets/img/sampling_context.png"  height="550"> bioreactor magic</p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-7" style="background:;">
-  <hgroup>
-    <h2>The Experiment: RNAseq Time Series</h2>
-  </hgroup>
-  <article data-timings="">
-    <p><img src="assets/img/sampling.png"  height="400"></p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="listheight smalltext" id="slide-8" style="background:;">
-  <hgroup>
-    <h3>Primary Segment 0417</h3>
+    <h3>The Data: Primary Segment 0417</h3>
   </hgroup>
   <article data-timings="">
     <p><img src="assets/img/primseg_00417.png"  height="300"></p>
@@ -252,7 +258,7 @@ SUT: stable untranslated, CUT: cryptic unstable, and XUT: Xrn1-sensitive unstabl
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-9" style="background:;">
+<slide class="" id="slide-7" style="background:;">
   <hgroup>
     <h3>Expressed Domain 003</h3>
   </hgroup>
@@ -263,25 +269,71 @@ SUT: stable untranslated, CUT: cryptic unstable, and XUT: Xrn1-sensitive unstabl
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-10" style="background:;">
+<slide class="" id="foo" style="background:;">
   <hgroup>
-    <h2>The Pipeline &amp; Karl</h2>
+    <h2>Data Pipeline, part II: <code>KARL</code></h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>Take samples; extract total RNA (Kalesh&#39;s method!);<br/>send off to 
-Beijing Genome Institute (1k $ per sample) </li>
 <li>Send &#39;reads&#39; (<code>fastq.gz</code>) files to Berni in Leipzig (Stephan Bernhart) &rarr;
 <code>segemehl</code> <br/>
-<img src="assets/img/burns.jpg" height="100"><img src="assets/img/studlasa.gif" height="100"> 
+<img src="assets/img/burns.jpg" height="145"><img src="assets/img/studlasa.gif" height="145"> 
 and
-retrieve mapping of reads the genome as <b>read counts!</b></li>
+retrieve <b>mapping of reads to genome</b> as <b>read counts!</b></li>
 <li>Contemplate over data ... do other stuff ... contemplate more over data ... annoy lots of math people with it ...cyanos ... contemplate yet some more over data ... annoy Studla ...<br/></li>
 <li><code>KARL</code>:<br/>
 <img src="assets/img/anadenobolus_arboreus.png" height="100">, the<br/>
 <img src="assets/img/segmentier.svg" height="45"></li>
 <li class='..'>contemplate over data again ...</li>
 </ol>
+
+<script>
+$("#foo ol").attr('start', 3)
+</script>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
+<img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
+
+<ol>
+<li>Cut genome, 2x12 Mb, into digestable chunks (<code>primary segments</code>)</li>
+<li>For each chunk, cluster read-counts; here: similar to previous approch,<br>
+take Discrete Fourier Transform <code>DFT</code> (scale components) &amp;<br>
+cluster selected (de-noised!) <code>DFT</code> components</li>
+<li>Calculate cluster-cluster and cluster-position similarities</li>
+<li>Feed hungry <code>KARL</code>: <b>to find coherently expressed regions</b></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="largetext" id="slide-10" style="background:;">
+  <hgroup>
+    <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
+<img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
+
+<ol>
+<li>Score time series coherence from positions \(j\) to \(i\): \(s(i,j,\mathcal{C})\)</li>
+<li>Maximize scoring matrix: \(S_{i,\mathcal{C}}\)</li>
+</ol>
+
+<p>\[
+\begin{equation*} \begin{aligned}
+ s(i,j,\mathcal{C})=& -M + \sum_{k=i}^j \tilde\Delta(C_k,\mathcal{C})\\ 
+ S_{i,\mathcal{C}} =& \max_{j \le i} \max_{\mathcal{D}\ne\mathcal{C}} S_{j-1,\mathcal{D}} + s(j,i,\mathcal{C})
+\end{aligned} \end{equation*}\]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -292,49 +344,133 @@ retrieve mapping of reads the genome as <b>read counts!</b></li>
     <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
   </hgroup>
   <article data-timings="">
-    
-<div style='float:left;width:75%;'>
-  <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
+    <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
 <img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
 
-<ol>
-<li>Cut genome, 2x12 Mb, into digestable chunks (<code>primary segments</code>)</li>
-<li>For each chunk, cluster read-counts, similar to previous approch:<br>
-take Discrete Fourier Transform <code>DFT</code> (scale components) &amp;<br>
-cluster selected (de-noised!) <code>DFT</code> components</li>
-<li>Calculate cluster-cluster and cluster-position similarities</li>
-<li>Feed hungry <code>KARL</code></li>
-</ol>
+<p><br>
+<font size=6>
+... and <code>backtrace</code> over score matrix \(S_{i,\mathcal{C}}\): </p>
 
-</div>
-<div style='float:right;width:12%;' class='centered'>
-  <p><br><br></p>
+<p>&rarr; <b>find optimal segment breakpoints</b>
+</font></p>
 
-</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="foo" style="background:;">
+<slide class="listheight" id="slide-12" style="background:;">
   <hgroup>
-    <h3>Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code></h3>
+    <h3>Finding Optimal Parameters: 108 parameter sets</h3>
   </hgroup>
   <article data-timings="">
-    <p><img src="assets/img/primseg_00436_ash_ash.png" height="250">
-<img src="assets/img/T.ash_D.dcash_K.12_S.icor_E.3_M.175_osc_K8.png"  height="250"></p>
+    <p><img src="assets/img/segmentations_PCA12_dctrafo.png" height="350">
+<img src="assets/img/segmentations_PCA12_exponent.png" height="350"></p>
 
-<p>Scoring:
-\[
-\begin{equation*} \begin{aligned}
- s(i,j,\mathcal{C})=& -M + \sum_{k=i}^j \tilde\sigma(x_k,\mathcal{C})\\ 
- S_{i,\mathcal{C}} =& \max_{j \le i} \max_{\mathcal{D}\ne\mathcal{C}} S_{j-1,\mathcal{D}} + s(j,i,\mathcal{C})
-\end{aligned} \end{equation*}\]</p>
+<p><strong><em>PCA of several segmentation characteristica</em></strong>, grouped by:<br></p>
 
-<p>&amp; backtracing optimal breakpoints</p>
+<ul>
+<li>Data pre-processing (left: dcraw/dcash)<br> </li>
+<li><code>Karl</code> parameters, here, exponent on Pearson correlation in 
+similarity measure (right)</li>
+</ul>
 
-<script>
-$("#foo ol").attr('start', 5)
-</script>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h3>Recovery of Known Transcripts</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/ORF_ratioTotal_clustered.png" height="400">
+<img src="assets/img/SUT_ratioTotal_clustered.png" height="400"></p>
+
+<p>Good recovery of known protein-coding genes.<br>
+Random recovery of reported non-coding transcripts!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h3>Recovery of Known Transcripts</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/A_ratioTotal_clustered.png" height="400">
+<img src="assets/img/D_ratioTotal_clustered.png" height="400"></p>
+
+<p>Much better recovery of <hoc>HOC (A)</hoc> than of <loc>LOC (D)</loc> protein-coding transcripts;<br> 
+ribosomes, amino acid synthesis, etc: important growth genes!</br></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="centertext" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>The Result: Pervasive Transcription during <loc>LOC</loc></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/T.ash_D.dcash_K.20_S.icor_E.5_M.175_timeseries.png" height="450"></p>
+
+<h2>... defined and conserved growth genes during <hoc>HOC</hoc></h2>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h3>Domain 122</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/domain_122_106kb.png"  width="900"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h3>Domain 046</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/domain_046_69kb.png" width="900"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h3>Primary Segment 0273</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00273.png"  height="300"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h3>Primary Segment 0271</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00271.png"  height="300"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h3>Primary Segment 0436</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/primseg_00436.png" height=300></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -352,19 +488,19 @@ $("#foo ol").attr('start', 5)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Gene Expression &amp; Chromatin'>
+        data-slide=2 title='Chromatin &amp; Templated RNA Polymerization'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Gene Expression &amp; Chromatin'>
+        data-slide=3 title='Chromatin &amp; Templated RNA Polymerization'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='The Budding Yeast Genome (Transcribed Units)'>
+        data-slide=4 title='Genome: Budding Yeast'>
          4
       </a>
     </li>
@@ -376,31 +512,31 @@ $("#foo ol").attr('start', 5)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='The Experiment: RNAseq Time Series'>
+        data-slide=6 title='The Data: Primary Segment 0417'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='The Experiment: RNAseq Time Series'>
+        data-slide=7 title='Expressed Domain 003'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Primary Segment 0417'>
+        data-slide=8 title='Data Pipeline, part II: <code>KARL</code>'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Expressed Domain 003'>
+        data-slide=9 title='Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code>'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='The Pipeline &amp; Karl'>
+        data-slide=10 title='Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code>'>
          10
       </a>
     </li>
@@ -412,8 +548,56 @@ $("#foo ol").attr('start', 5)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Similarity-Based Segmentation of Multi-Dimensional Signals by <code>KARL</code>'>
+        data-slide=12 title='Finding Optimal Parameters: 108 parameter sets'>
          12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Recovery of Known Transcripts'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Recovery of Known Transcripts'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='The Result: Pervasive Transcription during <loc>LOC</loc>'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Domain 122'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Domain 046'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Primary Segment 0273'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Primary Segment 0271'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Primary Segment 0436'>
+         20
       </a>
     </li>
   </ul>

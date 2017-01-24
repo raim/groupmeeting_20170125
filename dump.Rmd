@@ -4,3 +4,12 @@ X[1,1] <- '<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png"
 X[1,2] <- "<ol><li><HOC>cytosolic ribosomes</HOC> &rarr; <clB>amino acid synthesis</clB></li><li><clC>mitochondrial ribosomes</clC> &rarr; <LOC>stress & catabolism</LOC></li></ol>"
 print(xtable(X),sanitize.text.function=function(x){x}, type = "html")
 ```
+
+--- 
+## The Experiment: RNAseq Time Series
+<img src="assets/img/sampling_day.png"  height="400"><img src="assets/img/fermentor_detailed.png" height="200">
+
+--- 
+## The Experiment: RNAseq Time Series
+<img src="assets/img/sampling_context.png"  height="550"> bioreactor magic
+
