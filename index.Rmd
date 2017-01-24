@@ -221,7 +221,7 @@ cluster selected (de-noised!) `DFT` components
 
 $$latex
 \begin{equation*} \begin{aligned}
- s(i,j,\mathcal{C})=& -M + \sum_{k=i}^j \tilde\Delta(C_k,\mathcal{C})\\ 
+ s(i,j,\mathcal{C})=& -M + \sum_{k=i}^j \tilde\Delta(\mathcal{C}_k,\mathcal{C})\\ 
  S_{i,\mathcal{C}} =& \max_{j \le i} \max_{\mathcal{D}\ne\mathcal{C}} S_{j-1,\mathcal{D}} + s(j,i,\mathcal{C})
 \end{aligned} \end{equation*}$$
 
