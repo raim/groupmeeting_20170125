@@ -15,9 +15,14 @@ knit        : slidify::knit2slides
 
 <style>
 .title-slide {
-  background-color: #00AAA5; /* #EDE0CF; ; #CA9F9D*/
+  background-image:url(assets/img/220px-DNA_orbit_animated.gif), url(http://goo.gl/EpXln);
+  background-position: right bottom;
+  background-repeat: repeat-y;
 }
 
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
 .title-slide hgroup > h1{
  font-family: 'Oswald', 'Helvetica', sanserif; 
 }
@@ -25,6 +30,9 @@ knit        : slidify::knit2slides
 .title-slide hgroup > h1, 
 .title-slide hgroup > h2 {
   color: #00FFFF ;  /* ; #EF5150*/
+}
+.title-slide hgroup > p {
+  color: #FF0000 ;  /* ; #EF5150*/
 }
 </style>
 
