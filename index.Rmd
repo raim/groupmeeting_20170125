@@ -12,6 +12,30 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
 ---   &twocol .lineheight
+
+<style>
+.title-slide {
+  background-color: #00AAA5; /* #EDE0CF; ; #CA9F9D*/
+}
+
+.title-slide {
+  background-color: #CBE7A5; /* #EDE0CF; ; #CA9F9D*/
+  background-image:url(http://goo.gl/EpXln); 
+}
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #00FFFF ;  /* ; #EF5150*/
+}
+</style>
+
 <style>
 oq {
     background-color:yellow;
@@ -307,4 +331,15 @@ ribosomes, amino acid synthesis, etc: important growth genes!</br>
 
 <img src="assets/img/primseg_00436.png" height=300>
 
-fail ;( tiny osci segment divergent to SRG1 not recognized
+<div class="centered">fail ;( </div> 
+
+tiny osci segment divergent to SRG1 not recognized
+
+--- {.build}
+
+## Slide
+
+> 1. Point 1
+> 2. Point 2
+
+.build text
